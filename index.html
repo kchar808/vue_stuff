@@ -20,6 +20,19 @@
       Some info..
     </p>
 
+    <br>
+    <br>
+
+    {{ vehicles }}
+
+    <div v-for="vehicle in vehicles">
+      <p>vroom.. here is a {{ vehicle }}</p>
+    </div>
+
+    Add a new vehicle <input type="text" v-model="newVehicle">
+    <button v-on:click="addVehicle()">Add the vehicle</button>
+
+
   </div>
   <script src="index.js"></script>
 </body>
